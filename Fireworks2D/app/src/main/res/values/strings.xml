@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fireworks2D</string>
+    <string name="play_animation">PLAY ANIMATION</string>
+    <string name="play_two_animations">Play Two Animations</string>
+</resources>
