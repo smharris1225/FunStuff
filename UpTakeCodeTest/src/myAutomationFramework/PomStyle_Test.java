@@ -26,10 +26,10 @@ public class PomStyle_Test {
 	    driver.get("https://www.uptake.com/");
 	    UptakeHomePage.careersButton(driver).click();
 	    System.out.println(" Click Join Us to view open positions.");
-	    CareersPage.btn_JoinUs(driver).click();	
-	    driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL,"1");
+	    CareersPage.btn_JoinUs(driver).click();	//should launch new tab with job listings
+	    driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL,"1"); //takes us back to careers page tab
 	    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	      getscreenshot(); 
+	      getscreenshot(); //takes a screenshot to verify we are on careers page
 	    
 	    }
 public static void getscreenshot() throws Exception 
